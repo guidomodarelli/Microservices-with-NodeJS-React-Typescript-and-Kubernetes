@@ -82,6 +82,7 @@ services:
     networks:
       - elastic
   kibana:
+    tty: true
     container_name: kibana_container
     image: docker.elastic.co/kibana/kibana:8.10.4
     restart: always
